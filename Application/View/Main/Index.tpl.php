@@ -36,10 +36,34 @@
     <div class="container">
 
         <div class="col-md-6">
-            <p><button class="btn btn-block btn-default" id="status">Wait for connection</button></p>
-            <p><button class="btn btn-primary" data-action="foobar">An action !</button></p>
-            <p>ffff</p>
-            <p>ffff</p>
+            <p>
+                <div class="btn-group">
+                    <button class="btn btn-lg btn-default" id="status" ><span class="glyphicon glyphicon-refresh"></span></button>
+                    <button class="btn btn-lg btn-default" id="active"  disabled="disabled"><span class="glyphicon glyphicon-stop"></span></button>
+                </div>
+            </p>
+            <p>
+                <div class="btn-group">
+                    <button class="btn btn-success" data-action="active">Active</button>
+                    <button class="btn btn-warning" data-action="suspend">Suspend</button>
+                </div>
+            </p>
+            <p>
+                  <div class="btn-group">
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="login"><span class="glyphicon glyphicon-log-in"></span></button>
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="planet.list">Planet List</button>
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="event.list">Fleet event</button>
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="planet.collect">Collect Ressource</button>
+                  </div>
+            </p>
+            <p>
+                  <div class="btn-group">
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="planet.builder">Build</button>
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="planet.shipyard">Fleet</button>
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="planet.defense">Defense</button>
+                    <button class="btn btn-primary" data-action="bot" data-bot-action="planet.reserch">Research</button>
+                </div>
+            </p>
         </div>
         <div class="col-md-6">
             <pre id="output"></pre>

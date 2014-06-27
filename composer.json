@@ -2,7 +2,8 @@
     "name": "sohoa/sohoa",
     "require": {
         "sohoa/framework": "dev-master",
-        "hoa/websocket" : "dev-master"
+        "hoa/websocket" : "dev-master",
+        "hoa/console" : "dev-master"
     },
     "config": {
         "bin-dir": "Binaries"
